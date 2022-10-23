@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">manufacturer</Data></Cell>
+			<Cell><Data ss:Type="String">cylinders</Data></Cell>
+			<Cell><Data ss:Type="String">max_price</Data></Cell>
+			<Cell><Data ss:Type="String">min_price</Data></Cell>
+			<Cell><Data ss:Type="String">avg_price</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">audi</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">40000</Data></Cell>
+			<Cell><Data ss:Type="Number">16577.46</Data></Cell>
+			<Cell><Data ss:Type="Number">31317.1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">audi</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+			<Cell><Data ss:Type="Number">44494.54</Data></Cell>
+			<Cell><Data ss:Type="Number">43261.83</Data></Cell>
+			<Cell><Data ss:Type="Number">43878.19</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bmw</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">23927.44</Data></Cell>
+			<Cell><Data ss:Type="Number">15047.99</Data></Cell>
+			<Cell><Data ss:Type="Number">19487.72</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">fiat</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">37496</Data></Cell>
+			<Cell><Data ss:Type="Number">8068.23</Data></Cell>
+			<Cell><Data ss:Type="Number">26249.98</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">mercedes-benz</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">mercedes-benz</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">mercedes-benz</Data></Cell>
+			<Cell><Data ss:Type="Number">6</Data></Cell>
+			<Cell><Data ss:Type="Number">24937.68</Data></Cell>
+			<Cell><Data ss:Type="Number">24937.68</Data></Cell>
+			<Cell><Data ss:Type="Number">24937.68</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">opel</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">30000</Data></Cell>
+			<Cell><Data ss:Type="Number">10064.42</Data></Cell>
+			<Cell><Data ss:Type="Number">20847.49</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">peugeot</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">40000</Data></Cell>
+			<Cell><Data ss:Type="Number">16035.3</Data></Cell>
+			<Cell><Data ss:Type="Number">27626.22</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">peugeot</Data></Cell>
+			<Cell><Data ss:Type="Number">6</Data></Cell>
+			<Cell><Data ss:Type="Number">23051.9</Data></Cell>
+			<Cell><Data ss:Type="Number">23051.9</Data></Cell>
+			<Cell><Data ss:Type="Number">23051.9</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">renault</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">44239.25</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+			<Cell><Data ss:Type="Number">31377.98</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">saab</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">47597.9</Data></Cell>
+			<Cell><Data ss:Type="Number">16905.84</Data></Cell>
+			<Cell><Data ss:Type="Number">27896.18</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">triumph</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">30000</Data></Cell>
+			<Cell><Data ss:Type="Number">30000</Data></Cell>
+			<Cell><Data ss:Type="Number">30000</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">volkswagen</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">51239.14</Data></Cell>
+			<Cell><Data ss:Type="Number">20000</Data></Cell>
+			<Cell><Data ss:Type="Number">33462.54</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">volvo</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="Number">40000</Data></Cell>
+			<Cell><Data ss:Type="Number">30000</Data></Cell>
+			<Cell><Data ss:Type="Number">35000</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">volvo</Data></Cell>
+			<Cell><Data ss:Type="Number">6</Data></Cell>
+			<Cell><Data ss:Type="Number">44815.88</Data></Cell>
+			<Cell><Data ss:Type="Number">40000</Data></Cell>
+			<Cell><Data ss:Type="Number">42407.94</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>
