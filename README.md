@@ -24,7 +24,7 @@ Now I will proceed with the answers.
 
 The first task was to prepare the data for further analysis and provide the data model. 
 
-First I checked the data in a [jupyter notebook](.\b_scripts\ba_problem1_cleaning\00_data_checks.ipynb). In the [DATA_PREP document](.\DATA_PREP.md) you can find the long process I followed and all my thoughts.
+First I checked the data in a [jupyter notebook](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/ba_problem1_cleaning/00_data_checks.ipynb). In the [DATA_PREP document](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/DATA_PREP.md) you can find the long process I followed and all my thoughts.
   
 Here you can find a summary of what I have done and extracted:  
 1. **General stats for checks**: 
@@ -41,16 +41,16 @@ For example, I have tried to calculate the trip distance based on the latitude a
 
 Since in further analysis I would have to extract the car manufacturer, I have splitted it from the *car_name* variable in the *cars_fleet* table. Then I replaced some manufacturer names with miss-spells.  
 
-You can find the transformation in the [jupyter notebook](.\b_scripts\ba_problem1_cleaning\00_data_checks.ipynb) or in the data cleaning [python script](.\b_scripts\ba_problem1_cleaning\01_ETL_cleaning_files.py).
+You can find the transformation in the [jupyter notebook](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/ba_problem1_cleaning/00_data_checks.ipynb) or in the data cleaning [python script](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/ba_problem1_cleaning/01_ETL_cleaning_files.py).
 
 4. **Extracting the trips time in minutes**: 
 
 Since for further analysis I would need the trips time in minutes, I extracted it from the cars_trip table using the start_time and end_time variables. I also droped columns that I weren't going to use if further analysis.  
 
-Again, this can be find in the [jupyter notebook](.\b_scripts\ba_problem1_cleaning\00_data_checks.ipynb) or in the data cleaning [python script](.\b_scripts\ba_problem1_cleaning\01_ETL_cleaning_files.py).
+Again, this can be find in the [jupyter notebook](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/ba_problem1_cleaning/00_data_checks.ipynb) or in the data cleaning [python script](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/ba_problem1_cleaning/01_ETL_cleaning_files.py).
 
 5. **Loading data to MySQL**: 
-I loaded most of the tables to MySQL using it import functionality. Since the *cars_trips* table have too many rows (over 1 million), I loaded it with a [SQL query](.\b_scripts\ba_problem1_cleaning\02_SQL_Load_cars_trips.sql). to optimize the loading speed.
+I loaded most of the tables to MySQL using it import functionality. Since the *cars_trips* table have too many rows (over 1 million), I loaded it with a [SQL query](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/ba_problem1_cleaning/02_SQL_Load_cars_trips.sql). to optimize the loading speed.
 
 
 6. **Final data model**: 
@@ -66,7 +66,7 @@ The operations teams asked for:
 - *Total distance travelled and average trip distance travelled by car manufacturer*
 - *Average trip duration in minutes by car manufacturer*
 
-These request can be summarized in a single [SQL query](.\b_scripts\bb_problem2_operations_requests\SQL_operations_script.sql). The [output](.\c_problems_answers\2_Operations_requests.xml) would be similar to the below table:
+These request can be summarized in a single [SQL query](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/bb_problem2_operations_requests/SQL_operations_script.sql) would be similar to the below [table](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/c_problems_answers/2_Operations_requests.xml):
 
 | manufacturer | n_trips | total_distance_traveled | average_distance_traveled | average_trip_duration |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ Here I had to divide the problem in smaller steps:
 2. Filter the total_distance by KM (>12.000), part the table by manufacturer, order the table withing the partition by total_minutes and get the rows number (which now would represent the positio non the top by total_minutes).
 3. Filter the data by rows withing the manufacturer partition (<=3).
 
-You can find this process in the [SQL script](.\b_scripts\bc_problem3_marketing_requests\31_top_models_by_manufacturer_time_and_distance.sql). Below, you can see the [output](.\c_problems_answers\31_top_models.xml) table.
+You can find this process in the [SQL script](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/bc_problem3_marketing_requests/31_top_models_by_manufacturer_time_and_distance.sql). Below, you can see the [output](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/c_problems_answers/31_top_models.xml) table.
 
 | top | manufacturer | model | total_minutes |
 |---|---|---|---|
@@ -100,9 +100,9 @@ You can find this process in the [SQL script](.\b_scripts\bc_problem3_marketing_
 
 - ***Total distance travelled and average trip distance travelled by car manufacturer:***
 
-As for the Operations requests, the [SQL query](.\b_scripts\bc_problem3_marketing_requests\31_top_models_by_manufacturer_time_and_distance.sql) here was an straight fordward query. I had to join the *cars_fleet* data to *cars_price* and *cars_origin*.
+As for the Operations requests, the [SQL query](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/bc_problem3_marketing_requests/32_car_price_by_manufacturer_and_cylinders.sql) here was an straight fordward query. I had to join the *cars_fleet* data to *cars_price* and *cars_origin*.
 
-Here you can find the [output](.\c_problems_answers\32_price.xml).
+Here you can find the [output](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/c_problems_answers/32_price.xml).
 
 | manufacturer | cylinders | max_price | min_price | avg_price | 
 | --- | --- | --- | --- | --- |
@@ -118,9 +118,9 @@ Here you can find the [output](.\c_problems_answers\32_price.xml).
 
 Here the request was to pivot the data by manufacturer and the weight category provided by the marketing team.  
 
-For what I know, some SQL enviroments allows to pivot the data directly in the query. Any way, with MySQL it is not possible so I had to write the [SQL script](.\b_scripts\bc_problem3_marketing_requests\33_manufacturer_weight_matrix.sql) calculating the columns manually. 
+For what I know, some SQL enviroments allows to pivot the data directly in the query. Any way, with MySQL it is not possible so I had to write the [SQL script](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/b_scripts/bc_problem3_marketing_requests/33_manufacturer_weight_matrix.sql) calculating the columns manually. 
 
-Below is the [output](.\c_problems_answers\33_manufacturer_weight_tripKM_matrix.xml) of the  query:
+Below is the [output](https://github.com/Pablo-Rueda/revel-technical-test/blob/main/c_problems_answers/33_manufacturer_weight_tripKM_matrix.xml) of the  query:
 
 | manufacturer | 	W_<1000	 | W_1000-2000 | 	W_2000-3000	 | W_3000-4000	 | W_4000-5000 | 	W_>5000 | 
 | --- | --- | --- | --- | --- | --- | --- |
